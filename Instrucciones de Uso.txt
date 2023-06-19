@@ -1,0 +1,75 @@
+# Mi Aplicación
+
+Para este proyecto, utilicé las siguientes herramientas para el backend y el frontend:
+
+Backend:
+
+Node.js: Un entorno de ejecución de JavaScript del lado del servidor.
+Express.js: Un framework web para Node.js que facilita la creación de API y el manejo de solicitudes HTTP.
+MySQL: Un sistema de gestión de bases de datos relacional.
+Frontend:
+
+React: Una biblioteca de JavaScript para construir interfaces de usuario interactivas y reutilizables.
+Axios: Una biblioteca para realizar solicitudes HTTP desde el navegador.
+Funciones de la aplicación:
+
+Crear clientes: Permite crear nuevos clientes proporcionando su nombre y correo electrónico.
+Obtener clientes: Muestra una lista de todos los clientes existentes en la base de datos.
+Actualizar cliente: Permite actualizar el nombre y el correo electrónico de un cliente existente.
+Eliminar cliente: Permite eliminar un cliente de la base de datos.
+Crear viviendas: Permite crear nuevas viviendas proporcionando su nombre, metros cuadrados y precio.
+Obtener viviendas: Muestra una lista de todas las viviendas existentes en la base de datos.
+Actualizar vivienda: Permite actualizar el nombre, metros cuadrados y precio de una vivienda existente.
+Eliminar vivienda: Permite eliminar una vivienda de la base de datos.
+Resumen de los pasos seguidos para el desarrollo:
+
+Configuré el entorno de desarrollo instalando Node.js y MySQL.
+Creé un nuevo proyecto de Node.js utilizando npm (Node Package Manager).
+Configuré la base de datos MySQL y creé las tablas necesarias para clientes y viviendas.
+Implementé las rutas y controladores en el backend para manejar las operaciones CRUD (Crear, Leer, Actualizar, Eliminar) para clientes y viviendas.
+Desarrollé los componentes en el frontend utilizando React para interactuar con las API del backend.
+Conecté el frontend y el backend estableciendo comunicación a través de solicitudes HTTP utilizando la biblioteca Axios.
+Probé y depuré la aplicación para asegurarme de que todas las funcionalidades funcionaran correctamente.
+Optimicé el código, realicé ajustes finales y aseguré que la aplicación estuviera lista para ser utilizada.
+
+
+
+Aquí encontrarás los pasos para poder interactuar con la aplicación con el enlace de Github proporcionado
+
+## Pasos para Interactuar con la Aplicación
+
+1. **Clonar el Repositorio**
+   - Abre tu terminal y ejecuta el siguiente comando:
+     ```
+     git clone <URL_del_repositorio>
+     ```
+   - Esto creará una copia local del repositorio en tu máquina.
+
+2. **Instalar las Dependencias**
+   - Ve al directorio del proyecto:
+     ```
+     cd mi-aplicacion
+     ```
+   - Instala las dependencias necesarias:
+     ```
+     npm install
+     ```
+   - Este comando instalará todas las dependencias definidas en el archivo package.json.
+
+3. **Configurar la Base de Datos**
+   - Sigue las instrucciones del archivo `database-setup.md` para configurar la base de datos necesaria para la aplicación.
+
+4. **Iniciar el Servidor**
+   - Una vez instaladas las dependencias y configurada la base de datos, puedes iniciar el servidor:
+     ```
+     npm start
+     ```
+   - Esto iniciará el servidor y la aplicación estará disponible en [http://localhost:3000](http://localhost:3000).
+
+5. **Explorar la Aplicación**
+   - Abre tu navegador web y visita [http://localhost:3000](http://localhost:3000).
+   - puedes explorar la aplicación, interactuar con las diferentes funciones y disfrutar de todas las características.
+
+¡Disfruta de la aplicación y siéntete libre de hacer cualquier consulta o comentario!
+
+---
