@@ -1,0 +1,49 @@
+Aquí tienes las instrucciones para configurar la base de datos necesaria para la aplicación:
+
+Asegúrate de tener MySQL instalado en tu sistema. Puedes descargarlo desde el sitio web oficial de MySQL (https://dev.mysql.com/downloads/) y seguir las instrucciones de instalación correspondientes a tu sistema operativo.
+
+Una vez instalado MySQL, abre un cliente de MySQL, como MySQL Workbench o la línea de comandos.
+
+Crea una nueva base de datos ejecutando el siguiente comando:
+
+sql
+Copy code
+CREATE DATABASE pruebaprueba;
+Selecciona la base de datos que acabas de crear:
+
+sql
+Copy code
+USE pruebaprueba;
+Ahora, crea la tabla "clients" ejecutando el siguiente comando:
+
+sql
+Copy code
+CREATE TABLE clients (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL
+);
+Crea la tabla "dwellings" ejecutando el siguiente comando:
+
+sql
+Copy code
+CREATE TABLE dwellings (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  m2 FLOAT NOT NULL,
+  price FLOAT NOT NULL
+);
+¡La configuración de la base de datos está completa! Ahora puedes utilizar la aplicación con la base de datos recién creada.
+
+Recuerda que en el archivo server.js de tu aplicación, debes asegurarte de que los detalles de conexión a la base de datos (como el nombre de usuario, la contraseña y el nombre de la base de datos) sean correctos en la configuración del objeto pool:
+
+javascript
+Copy code
+const pool = mysql.createPool({
+  connectionLimit: 10,
+  host: 'localhost',
+  user: 'tu_usuario_mysql', // Reemplaza con tu nombre de usuario de MySQL
+  password: 'tu_contraseña_mysql', // Reemplaza con tu contraseña de MySQL
+  database: 'pruebaprueba' // Reemplaza si utilizaste un nombre de base de datos diferente
+});
+Sigue estas instrucciones para configurar correctamente la base de datos necesaria para la aplicación.
